@@ -1,0 +1,50 @@
+string rec(input) {
+	
+	string inner;
+	string rec_out;
+	double computed;
+
+	inner = inBrack(input);
+	if inner != null
+		rec_out = rec(inner);
+		input = input.replace(inner, rec_out);
+	
+	computed = compute(input);
+	return ""+computed;	
+}
+
+string[] rec(String[] input) {
+	string[] inner;
+	string[] rec_out;
+	double[] computed;
+	string[] computed_str;
+
+	inner = inBrack(input);
+	if inner != null
+		rec_out[] = rec(inner);
+		input[] = input.rep(inner[], rec_out[]);
+	
+	computed[] = compute(input);
+	computed_str = convDouble(computed);
+	return computed_str;
+}
+
+list<Object> rec(list<Object> input) {
+	
+	list<Object> inner;
+	list<Object> rec_out;
+	list<Double> computed;
+	list<Object> computed_obj;
+
+	inner = inBrack(input);
+	if inner != null
+		rec_out = rec(inner);
+		input = input.rep(inner, rec_out);
+	
+	computed = compute(input);
+	computed_str = convDouble(computed);
+	return computed_str;
+}
+
+
+
