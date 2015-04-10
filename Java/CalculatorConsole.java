@@ -169,25 +169,6 @@ public class CalculatorConsole {
     private ArrayList<Double> compute(ArrayList<Object> input) {
         ArrayList<Double> computed = new ArrayList<>();
         
-        double[] nums;
-        
-        String operator = "";
-        String statement;
-        
-        
-        Pattern oper = Pattern.compile("[0-9]{1,}([\\W]{1})[0-9]{1,}");
-        Matcher mat;
-        // FIX THIS HORSESHIT CODE !!!!
-        for (Object obj : input) {
-            statement = obj.toString();
-            statement = statement.replaceAll("\\(|\\)", "");
-            mat = oper.matcher(statement);
-            if (mat.find())
-                operator = mat.group();
-            String[] state = statement.split("\\"+operator);
-            // Get individual numbers from statement
-        }
-        
         return computed;
     }
     private ArrayList<Object> convDouble(ArrayList<Double> doubles) {
